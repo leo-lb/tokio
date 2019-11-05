@@ -1,4 +1,4 @@
-use crate::executor::task::{Schedule, Task};
+use crate::executor::task::{Schedule, SendMarker, Task};
 
 use loom::sync::Notify;
 use std::collections::VecDeque;
@@ -32,7 +32,7 @@ impl LoomSchedule {
     }
 }
 
-impl Schedule for LoomSchedule {
+impl Schedule<SendMarker> for LoomSchedule {
     fn bind(&self, _task: &Task<Self>) {}
 
     fn release(&self, task: Task<Self>) {
