@@ -121,11 +121,18 @@ pub mod timer;
 #[cfg(feature = "executor-core")]
 pub mod executor;
 
+#[cfg(feature = "local")]
+pub use crate::executor::local;
+
 if_runtime! {
     pub mod runtime;
 
     #[doc(inline)]
     pub use crate::executor::spawn;
+
+    #[doc(inline)]
+    #[cfg(feature = "local")]
+    pub use crate::local::spawn_local;
 
     #[cfg(not(test))] // Work around for rust-lang/rust#62127
     #[cfg(feature = "macros")]
