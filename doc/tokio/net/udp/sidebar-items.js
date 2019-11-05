@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["split","`UdpSocket` split support."]],"struct":[["UdpSocket","An I/O object representing a UDP socket."]]});

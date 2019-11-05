@@ -1,0 +1,1 @@
+initSidebarItems({"trait":[["AsyncBufRead","Read bytes asynchronously."],["AsyncRead","Read bytes asynchronously."],["AsyncWrite","Writes bytes asynchronously."],["Future","A future represents an asynchronous computation."],["Sink","A `Sink` is a value into which other values can be sent, asynchronously."],["Stream","A stream of values produced asynchronously."]]});

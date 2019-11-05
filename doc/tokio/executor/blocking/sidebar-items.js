@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["in_place","Run the provided blocking function without blocking the executor."],["run","Run the provided closure on a thread where blocking is acceptable."]],"struct":[["Blocking","Result of a blocking operation running on the blocking thread pool."]]});

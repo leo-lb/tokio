@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["spawn","Spawns a future on the default executor."]],"mod":[["blocking","Thread pool for blocking operations"],["park","Abstraction over blocking and unblocking the current thread."]],"struct":[["JoinError","Task failed to execute to completion."],["JoinHandle","An owned permission to join on a task (await its termination)."]]});
